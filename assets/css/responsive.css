@@ -1,0 +1,55 @@
+/* ############################# */
+/* Responsive */
+/* ############################# */
+@media screen and (max-width: 991px) {
+  #home {
+    /* background-color: var(--black); */
+    /* color: var(--white); */
+    margin-top: -100px;
+    padding-top: 10px;
+    height: 150vh;
+  }
+
+  #home .container .row h3 {
+    font-size: 15px;
+  }
+  #home .container .row p {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+
+  #home .container .row .col-md-6 .socials-icons i {
+    font-size: 15px;
+    margin: 0 12px 0;
+  }
+  #home .container .row .col-md-6 .socials-icons a {
+    width: 2rem;
+    height: 2rem;
+    margin: 3rem 0.5rem 2rem 0;
+  }
+  #home .container .row {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
+  }
+
+  #home .container .row .col-md-6 .right {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #home .container .row .col-md-6 .right img {
+    width: 100%;
+    /* margin-left: 60px; */
+    margin-top: -100px;
+  }
+  #home .container .row .col-md-6 .right img {
+    width: 35vw;
+    max-width: 100%;
+    animation: animImg 4s ease-in-out infinite;
+  }
+  .btn-contact a {
+    padding: 8px 25px;
+    font-size: 15px;
+  }
+}
