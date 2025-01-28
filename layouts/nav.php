@@ -51,11 +51,11 @@
         <i class="fa-solid fa-bars"></i>
     </div>
     <div class="navigation">
-        <a class="#" href="index.php#home">home</a>
-        <a class="#" href="index.php#about">about</a>
-        <a class="#" href="index.php#services">services</a>
-        <a class="#" href="index.php#projet">projet</a>
-        <a class="#" href="index.php#contact">contact</a>
+        <a class="#" href="index.php#home"></a>
+        <a class="#" href="index.php#about"></a>
+        <a class="#" href="index.php#services"></a>
+        <a class="#" href="index.php#projet"></a>
+        <a class="#" href="index.php#contact"></a>
 
     </div>
 </header>
