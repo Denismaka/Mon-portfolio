@@ -65,7 +65,7 @@
     /* Header   */
     /* ################  */
     header {
-        z-index: 999;
+        z-index: 1000;
         position: fixed;
         background: rgba(255, 255, 255, 0.1);
         top: 0;
@@ -79,7 +79,7 @@
     }
 
     header.sticky {
-        background-color: #3a6cf4;
+        background-color: #0ad30a;
         padding: 10px 200px;
     }
 
@@ -129,3 +129,12 @@
         }
     }
 </style>
+
+<script>
+    // Javascript for navigation bar affects on scroll
+
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+    });
+</script>
