@@ -29,6 +29,6 @@ Pour toute question ou collaboration, n'hésitez pas à me contacter :
 
 - **Email** : makadenis370@gmail.com
 - **Téléphone** : +243818252385, +243997435030.
-- **Réseaux sociaux** : Suivez-moi sur https://twitter.com/MakaDenis3, https://www.linkedin.com/in/Denis maka, https://github.com/Denismaka, https://www.facebook.com/Denismaka
+- **Réseaux sociaux** : Suivez-moi sur https://twitter.com/MakaDenis3, https://www.linkedin.com/in/Denismaka, https://github.com/Denismaka, https://www.facebook.com/Denismaka
 
 Merci de votre visite sur mon portfolio !
