@@ -51,11 +51,11 @@
         <i class="fa-solid fa-bars"></i>
     </div>
     <div class="navigation">
-        <a class="#" href="index.php#home"></a>
-        <a class="#" href="index.php#about"></a>
-        <a class="#" href="index.php#services"></a>
-        <a class="#" href="index.php#projet"></a>
-        <a class="#" href="index.php#contact"></a>
+        <a class="#" href="index.php#home">home</a>
+        <a class="#" href="index.php#about">about</a>
+        <a class="#" href="index.php#services">services</a>
+        <a class="#" href="index.php#projet">projet</a>
+        <a class="#" href="index.php#contact">contact</a>
 
     </div>
 </header>
@@ -98,17 +98,20 @@
     header .navigation a {
         color: #fff;
         font-size: 1em;
-        font-weight: 500;
+        font-weight: 700;
         text-decoration: none;
         margin-left: 30px;
+        text-transform: uppercase;
     }
 
     header .navigation a:hover {
         color: #3a6cf4;
+        transition: 0.5s ease-in-out;
     }
 
     header.sticky .navigation a:hover {
         color: #000;
+        transition: 0.5s ease-in-out;
     }
 
     @media (max-width: 1024px) {
