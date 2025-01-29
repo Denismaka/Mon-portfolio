@@ -2,7 +2,7 @@
 include 'functions/projet.func.php'; ?>
 
 
-<section class="projet" id="projet" style="margin-top: -20.3rem;">
+<section class="projet" id="projet" style="margin-top: -20.3rem; height: 50%;">
     <div class="heading mb-5">
         <h5>mes <span>traveaux</span></h5>
         <h4>projects récents</h4>
