@@ -79,7 +79,7 @@
     }
 
     header.sticky {
-        background-color: #0ad30a;
+        background-color: rgb(5, 49, 5);
         padding: 10px 200px;
     }
 
