@@ -47,9 +47,7 @@
 
 <header>
     <a href="#" class="brand">Denis Maka</a>
-    <div class="menu-btn">
-        <i class="fa-solid fa-bars"></i>
-    </div>
+    <div class="menu-btn"></div>
     <div class="navigation">
         <a class="#" href="index.php#home">home</a>
         <a class="#" href="index.php#about">about</a>
@@ -65,7 +63,7 @@
     /* Header   */
     /* ################  */
     header {
-        z-index: 1000;
+        z-index: 999;
         position: fixed;
         background: rgba(255, 255, 255, 0.1);
         top: 0;
@@ -79,7 +77,7 @@
     }
 
     header.sticky {
-        background-color: rgb(5, 49, 5);
+        background-color: rgb(12, 53, 5);
         padding: 10px 200px;
     }
 
@@ -93,26 +91,19 @@
 
     header .navigation {
         position: relative;
+        display: flex;
+        /* Afficher la navigation sur les grands écrans */
     }
 
     header .navigation a {
         color: #fff;
         font-size: 1em;
         font-weight: 700;
+        text-transform: uppercase;
         text-decoration: none;
         margin-left: 30px;
-        text-transform: uppercase;
     }
 
-    header .navigation a:hover {
-        color: #3a6cf4;
-        transition: 0.5s ease-in-out;
-    }
-
-    header.sticky .navigation a:hover {
-        color: #000;
-        transition: 0.5s ease-in-out;
-    }
 
     @media (max-width: 1024px) {
         header {
@@ -125,10 +116,64 @@
 
         header .navigation {
             display: none;
+            /* Masquer la navigation sur les petits écrans */
         }
 
         .menu-btn {
             position: absolute;
+        }
+
+        header .navigation a {
+            color: #fff;
+            font-size: 1.2em;
+            margin: 10px;
+            text-decoration: none;
+            padding: 0 20px;
+            border-radius: 20px;
+        }
+
+        header .navigation a:hover {
+            box-shadow: 0 0 1rem #ff0000;
+            color: #fff;
+            transition: 0.3 ease;
+        }
+
+        .menu-btn {
+            position: absolute;
+            background-image: url(/assets/images/menu-burger.png) no-repeat;
+            background-size: 30px;
+            background-position: center;
+            width: 40px;
+            height: 40px;
+            right: 0;
+            margin: 0 20px;
+            cursor: pointer;
+            transition: 0.3 ease;
+        }
+
+        .menu-btn.active {
+            z-index: 999;
+            background-image: url(/assets/images/fermer.png) no-repeat;
+            background-size: 25px;
+            background-position: center;
+            transition: 0.3s ease;
+            filter: invert(1);
+        }
+
+        header .navigation.active {
+            z-index: 888;
+            position: fixed;
+            background-color: rgb(9, 88, 42);
+            top: 0;
+            right: 0;
+            width: 380px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            box-shadow: 0 5px 25px rgba(1, 1, 1, 0.15);
+            transition: 0.3 ease;
         }
     }
 </style>
@@ -139,5 +184,22 @@
     window.addEventListener('scroll', function() {
         const header = document.querySelector('header');
         header.classList.toggle('sticky', window.scrollY > 0);
+    });
+
+
+    const menuBtn = document.querySelector('.menu-btn');
+    const navigation = document.querySelector('.navigation');
+    const navigationItems = document.querySelectorAll('.navigation a'); // Ajouté
+
+    menuBtn.addEventListener('click', () => {
+        menuBtn.classList.toggle('active');
+        navigation.classList.toggle('active');
+    });
+
+    navigationItems.forEach((navigationItem) => {
+        navigationItem.addEventListener('click', () => {
+            menuBtn.classList.remove('active');
+            navigation.classList.remove('active');
+        });
     });
 </script>
